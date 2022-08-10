@@ -1,0 +1,268 @@
+/* header nav start */
+
+header .container nav{
+    padding: 1px;
+}
+
+header .container nav a{
+    margin: 4px;
+    font-size: 14px;
+    padding: .8%;
+    letter-spacing: 2px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2), -2px -2px 5px rgba(0,0,0,0.2) ;
+}
+
+
+
+/* header nav end */
+
+
+
+/* Section 1 starting */
+
+.banner-container .section-1{
+    display: flex;
+    flex-direction: column-reverse; 
+}
+
+
+
+.section-1 .left-section{
+    margin: auto;
+    padding: 20px;
+    width: 100%;
+}
+
+.section-1 .left-section .image-back{
+    background-size: cover;
+    transform: scaleX(-1);
+    margin-top: 150px;
+    width: 500px;
+    height: 600px;
+}
+
+
+.section-1 .left-section .imgg{
+    margin-right: 25px;
+    margin-top: 0px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 90%;
+}
+
+
+.section-1 .right-section{
+    margin-top: 80px;
+    width: 100%;
+    text-align: center;
+}
+
+.section-1 .right-section h1{
+    font-size: 75px;
+}
+
+.section-1 .right-section h2{
+    font-size: 40px;
+}
+
+
+/* Section 1 End */
+
+
+
+/* .section-2-start */
+
+.banner-container .section-2{
+    background-position: center;
+    background-size: contain;
+    background-attachment: fixed;   
+}
+
+@keyframes section-two-back-light{
+    0%,100%{
+        background: linear-gradient(400deg,rgb(25,86,98),rgba(25,86,98,0.9),rgb(25,86,98)),url(./Images/21_bacgroung_sec_2_and_all.jpg);
+        background-position: center;
+        background-size: contain;
+        background-attachment: fixed;
+    }
+    
+    40%{
+        background: linear-gradient(400deg,rgb(25,86,98),rgba(25,86,98,0.8),rgb(25,86,98)),url(./Images/21_bacgroung_sec_2_and_all.jpg);
+        background-position: center;
+        background-size: contain;
+        background-attachment: fixed;
+    }
+
+    60%{
+        background: linear-gradient(400deg,rgb(25,86,98),rgba(25,86,98,0.85),rgb(25,86,98)),url(./Images/21_bacgroung_sec_2_and_all.jpg);
+        background-position: center;
+        background-size: contain;
+        background-attachment: fixed;
+    }
+
+    80%{
+        background: linear-gradient(400deg,rgb(25,86,98),rgba(25,86,98,0.95),rgb(25,86,98)),url(./Images/21_bacgroung_sec_2_and_all.jpg);
+        background-position: center;
+        background-size: contain;
+        background-attachment: fixed;
+    }
+
+    90%{
+        background: linear-gradient(400deg,rgb(25,86,98),rgba(25,86,98,1),rgb(25,86,98)),url(./Images/21_bacgroung_sec_2_and_all.jpg);
+        background-position: center;
+        background-size: contain;
+        background-attachment: fixed;
+    }
+}
+
+
+.section-2 .container .about-box{
+    font-size: 24px;
+    margin: auto;
+    line-height: 40px;
+    padding: 4px;
+    transform: scale(.9);
+    text-align: center;
+    box-shadow: 0 0 0 10px rgba(11,57,66,0.6);
+}
+
+.section-2 .container .about-box:hover{
+    transform: scale(1);
+    padding: 4px;
+    box-shadow: 0 0 0 10px rgba(11,57,66,1);
+}
+
+.section-2 .container .about-box h4::before{
+    content:open-quote;
+    font-size: 33px;
+}
+
+.section-2 .container .about-box h4::after{
+    content: close-quote;
+    font-size: 33px;
+}
+
+/* Section 2 End */
+
+
+
+/* .section-3-start */
+
+.section-3 .container .legacy-box{
+    height: 150px;
+    width: 150px;
+    margin: 4px;
+    font-size:larger;
+    line-height: 20px;
+    padding: 25px;
+    flex: 40%;
+}
+
+.section-3 .container .legacy-box h5::before{
+    display: inline-block;
+    content: '';
+    border-radius: 50%;
+    height: 1rem;
+    width: 1rem;
+    margin-right: 4px;
+}
+
+/* Section 3 End */
+
+
+
+/* .section-4start */
+.section-4{
+    background-position: center;
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+@keyframes section-four-back-light{
+    0%,100%{
+        background: linear-gradient(400deg,rgb(25,86,98),rgba(25,86,98,0.9),rgb(25,86,98)),url(./Images/23_bacgroung_sec_2_and_all.jpg);
+        background-size:contain;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    
+    40%{
+        background: linear-gradient(400deg,rgb(25,86,98),rgba(25,86,98,0.8),rgb(25,86,98)),url(./Images/23_bacgroung_sec_2_and_all.jpg);
+        background-size:contain;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    60%{
+        background: linear-gradient(400deg,rgb(25,86,98),rgba(25,86,98,0.85),rgb(25,86,98)),url(./Images/23_bacgroung_sec_2_and_all.jpg);
+        background-size:contain;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    80%{
+        background: linear-gradient(400deg,rgb(25,86,98),rgba(25,86,98,0.95),rgb(25,86,98)),url(./Images/23_bacgroung_sec_2_and_all.jpg);
+        background-size:contain;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    90%{
+        background: linear-gradient(400deg,rgb(25,86,98),rgba(25,86,98,1),rgb(25,86,98)),url(./Images/23_bacgroung_sec_2_and_all.jpg);
+    }
+}
+
+.section-4 .container .controversy-box{
+    padding: 6px;
+    transform: scale(.9);
+    text-align: center;
+    box-shadow: 0 0 0 10px rgba(11,57,66,0.6);
+}
+
+.section-4 .container .controversy-box h1{
+    font-size: 12px;
+}
+
+.section-4 .container:hover .controversy-box{
+    transform: scale(1);
+    padding: 4px;
+    box-shadow: 0 0 0 10px rgba(11,57,66,1);
+}
+
+.section-4 .container .controversy-box h1::before{
+    content:open-quote;
+    font-size: 28px;
+}
+
+.section-4 .container .controversy-box h1::after{
+    content: close-quote;
+    font-size: 28px;
+}
+
+
+/* Section 4 End */
+
+
+
+/* .section-5-start */
+
+.section-5 .container .quotes-box{
+    height: 180px;
+    width:180px;
+    margin: 10px;
+    font-size:large;
+    line-height: 18px;
+    padding: 15px;
+    flex: 40%;
+    text-align: center;
+}
+
+.section-5 .container .quotes-box h5::before{
+    font-size: x-large;
+}
+
+.section-5 .container .quotes-box h5::after{
+    font-size: x-large;
+}
+
+/* Section 5 End */

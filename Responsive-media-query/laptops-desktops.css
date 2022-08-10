@@ -1,0 +1,68 @@
+.banner-container .section-1{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.section-1 .left-section{
+    display: flex;
+    width: 50%;
+    height: 80%;
+}
+
+
+
+.banner-container .section-1{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(400deg,rgb(25,86,98),rgba(25,86,98,0.9),rgb(25,86,98)),url(./Images/12_background_sec_1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+.section-1 .left-section{
+    display: flex;
+    width: 60%;
+    height: 80%;
+}
+
+.section-1 .left-section .image-back{
+    height: 80%;
+    width: 100%;
+}
+
+
+.section-1 .left-section .imgg{
+    width: 90%;
+    height: 90%;
+}
+
+/* section 1 style end */
+
+
+
+/* section 3 style start */
+
+.section-3 .container .legacy-box{
+    flex: 25%;
+    height: 180px;
+    width: 180px;
+    font-size: larger;
+    line-height: 30px;
+}
+
+
+/* Section 3 style End */
+
+
+
+/* Section 5 style start */
+
+/* Section 5 style end */

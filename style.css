@@ -1,0 +1,731 @@
+:root{
+    --my-color:rgba(5,85,101,0.9);
+    --text-color:rgb(25 185 215 / 60%);
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* header nav bar start */
+
+header .container{
+    position: fixed;
+    top :0;
+    width: 100%;
+    z-index: 222222;
+    overflow: hidden;
+   
+}
+
+header .container nav{
+    background-color: rgba(5,85,101,0.9);
+    width: 100%;
+    height: 50px;
+    border: none;
+    box-shadow: 0 4px 5px -5px black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2%;
+}
+
+header .container nav a{
+    cursor: pointer;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2), -5px -5px 10px rgba(0,0,0,0.2) ;
+    border-radius: 4px;
+    color: var(--text-color);
+    padding: 0.9%;
+    text-align: center;
+    transition: .3s ease-in-out;
+}
+
+header .container nav a:hover{
+    color: rgba(0,255,255,0.6);
+}
+
+header .container nav a:nth-child(1){
+    animation: navbar-a-visible 4s linear 1s infinite;
+}
+
+header .container nav a:nth-child(1):hover{
+    animation-play-state: paused;
+}
+
+header .container nav a:nth-child(2){
+    animation: navbar-a-visible 4s linear 2s infinite;
+}
+
+header .container nav a:nth-child(2):hover{
+    animation-play-state: paused;
+}
+
+header .container nav a:nth-child(3){
+    animation: navbar-a-visible 4s linear 3s infinite;
+}
+
+header .container nav a:nth-child(3):hover{
+    animation-play-state: paused;
+}
+
+header .container nav a:nth-child(4){
+    animation: navbar-a-visible 4s linear 4s infinite;
+}
+
+header .container nav a:nth-child(4):hover{
+    animation-play-state: paused;
+}
+
+@keyframes navbar-a-visible{
+    from{
+        box-shadow: -1px 0 3px rgba(0,0,0,0.5), 1px 0 3px rgba(0,0,0,0.4), inset 2px 2px 6px rgba(0,0,0,0.4)
+    }
+
+    to{
+        box-shadow: none;
+    }
+}
+
+
+/* header nav bar end */
+
+
+/* Section 1 start */
+
+
+.banner-container .section-1{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(400deg,rgb(25,86,98),rgba(25,86,98,0.9),rgb(25,86,98)),url(./Images/12_background_sec_1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+.section-1 .left-section{
+    display: flex;
+    width: 60%;
+    height: 80%;
+}
+
+.section-1 .left-section .image-back{
+    height: 80%;
+    width: 100%;
+    background:linear-gradient(400deg,rgba(25,86,98,0.4),rgba(25,86,98,0.4),rgba(25,86,98,0.3)),url(./Images/11_background_sec_1.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position:left;
+    background-size: contain;
+    margin-top: 6%;
+    border-radius: 15px;
+    animation:image-changing-back 4s linear 2s infinite;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+
+.section-1 .left-section .imgg{
+    background:linear-gradient(400deg,rgba(25,86,98,0.2),rgba(25,86,98,0.2),rgba(25,86,98,0.2)),url(./Images/1.0_main.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 90%;
+    height: 100%;
+    margin-left: -60%;
+    animation:image-changing-front 4s linear 2s infinite ;
+    margin-top: -5px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+/* .left-section front image changing Animation start */
+
+
+@keyframes image-changing-front{
+    0%,100%{
+        background:linear-gradient(400deg,rgba(25,86,98,0.2),rgba(25,86,98,0.2),rgba(25,86,98,0.2)),url(./Images/1.0_main.jpg);
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    50%{
+        background:linear-gradient(400deg,rgba(25,86,98,0.4),rgba(25,86,98,0.4),rgba(25,86,98,0.3)),url(./Images/11_background_sec_1.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position:left;
+        background-size: contain;
+    }
+}
+
+@keyframes image-changing-back{
+    0%,100%{
+        background:linear-gradient(400deg,rgba(25,86,98,0.4),rgba(25,86,98,0.4),rgba(25,86,98,0.3)),url(./Images/11_background_sec_1.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position:left;
+        background-size: contain;
+    }
+
+    50%{
+        background:linear-gradient(400deg,rgba(25,86,98,0.2),rgba(25,86,98,0.2),rgba(25,86,98,0.2)),url(./Images/1.0_main.jpg);
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+}
+
+/* .left-section front image changing Animation start End*/
+
+.section-1 .right-section{
+    text-align: center;
+}
+
+.section-1 .right-section h1{
+    font-size: 60px;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    color: rgb(5, 114, 134);
+    animation: lighting-words 5s linear 2s infinite;
+}
+
+.section-1 .right-section h2{
+    font-size: 30px;
+    color: rgb(5, 114, 134,0.9);
+    animation: lighting-words 5s linear 4s infinite;
+}
+
+
+/* Right-section h1 and h2 animation start */
+
+@keyframes lighting-words{
+    0%,100%{
+        color: rgba(5, 114, 134,0.9);
+    }
+
+    20%{
+        color: rgba(5, 114, 134,0.7);
+    }
+
+    50%{
+        color: rgba(5, 114, 134,0.5);
+    }
+
+    80%{
+        color: rgba(5, 114, 134,0.7);
+    }
+}
+
+
+
+
+
+
+
+/* Section 2 start */
+
+.banner-container .section-2{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(400deg,rgb(25,86,98),rgba(25,86,98,0.9),rgb(25,86,98)),url(./Images/21_bacgroung_sec_2_and_all.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    animation: section-two-back-light 8s linear 2s infinite
+}
+
+@keyframes section-two-back-light{
+    0%,100%{
+        background: linear-gradient(400deg,rgb(25,86,98),rgba(25,86,98,0.9),rgb(25,86,98)),url(./Images/21_bacgroung_sec_2_and_all.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    
+    40%{
+        background: linear-gradient(400deg,rgb(25,86,98),rgba(25,86,98,0.8),rgb(25,86,98)),url(./Images/21_bacgroung_sec_2_and_all.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    60%{
+        background: linear-gradient(400deg,rgb(25,86,98),rgba(25,86,98,0.85),rgb(25,86,98)),url(./Images/21_bacgroung_sec_2_and_all.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    80%{
+        background: linear-gradient(400deg,rgb(25,86,98),rgba(25,86,98,0.95),rgb(25,86,98)),url(./Images/21_bacgroung_sec_2_and_all.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    90%{
+        background: linear-gradient(400deg,rgb(25,86,98),rgba(25,86,98,1),rgb(25,86,98)),url(./Images/21_bacgroung_sec_2_and_all.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+
+}
+
+
+.section-2 .container{
+    width: 100%;
+    height: 90vh;
+    background:transparent;
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+}
+
+.section-2 .container .about-box{
+    color: var(--text-color);
+    font-size: 22px;
+    padding: 5px;
+    transform: scale(.9);
+    background-color: rgba(6 ,75, 88 ,1);
+    box-shadow: 0 0 0 10px rgba(11,57,66,0.8);
+    transition: .3s ease-in-out;
+    border-radius: 5px;
+    transform: scale(0.9);
+}
+
+.section-2 .container .about-box:hover{
+    box-shadow: 0 0 0 20px rgba(11,57,66,1);
+    background-color: rgba(11,57,66,0.9);
+    transform: scale(1);
+}
+
+.section-2 .container .about-box:nth-child(4){
+    transform: scale(1);
+}
+
+
+.section-2 .container .about-box h4::before{
+    content:open-quote;
+    font-size: 20px;
+}
+
+.section-2 .container .about-box h4::after{
+    content: close-quote;
+    font-size: 20px;
+}
+
+
+
+/* Section 2 End */
+
+
+
+/* Section 3 start */
+
+
+.banner-container .section-3{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(400deg,rgb(25,86,98),rgba(25,86,98,0.9),rgb(25,86,98)),url(./Images/22_bacgroung_sec_2_and_all.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.section-3 .container{
+    width: 100%;
+    height: 100vh;
+    background:transparent;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+    padding: 5px;
+}
+
+.section-3 .container .legacy-box{
+    color: var(--text-color);
+    flex: 20%;
+    height: 300px;
+    width: 300px;
+    background-color: rgba(6 ,75, 88 ,1);
+    margin: 10px;
+    font-size:x-large;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2), -5px -5px 10px rgba(0,0,0,0.1);
+    transform: scale(.9);
+    transition: .3s ease-in-out;
+    z-index: 11;
+}
+
+.section-3 .container .legacy-box:hover{
+    box-shadow: 0 0 30px rgba(11,57,66,1);
+    transform: scale(1);
+    z-index: 111;
+    background-color:rgba(16 ,60 ,68,1);
+
+}
+
+
+.section-3 .container .legacy-box h5::before{
+    display: inline-block;
+    content: '';
+    border-radius: 50%;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: rgba(11,57,66,0.7);
+    margin-right: 5px;
+    animation: backdot-h5 3s linear 2s infinite
+}
+
+@keyframes backdot-h5{
+    0%,100%{
+        opacity: .8;
+    }
+
+    50%{
+        opacity: 0.2;
+    }
+
+    80%{
+        opacity: .5;
+    }
+
+}
+
+
+.section-3 .backdesign{
+    transform: translateY(100vh);
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    animation: backshow-section-3 4s ease-in-out 2s infinite;
+    z-index: 1;
+}
+
+
+@keyframes backshow-section-3{
+    0%,100%{
+        
+        box-shadow: 0 0 20px rgba(6 ,75, 88 ,0.3);
+    }
+
+    20%{
+        box-shadow: 0 0 1px rgba(11,57,66,0.9);
+    }
+
+    50%{
+        box-shadow: 0 0 1px rgba(11,57,66,0.6);
+    }
+
+    70%{
+        box-shadow: 0 0 1px rgba(11,57,66,.9);
+    }
+
+    80%{
+        transform: rotate(36000deg);
+        box-shadow: 0 0 0 500px rgba(11,57,66,0.2);
+    }
+
+}
+
+
+/* Section 3 End */
+
+
+
+/* Section 4 start */
+
+.banner-container .section-4{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(400deg,rgb(25,86,98),rgba(25,86,98,0.9),rgb(25,86,98)),url(./Images/23_bacgroung_sec_2_and_all.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    animation:section-four-back-light 8s linear 2s infinite;
+}
+
+
+@keyframes section-four-back-light{
+    0%,100%{
+        background: linear-gradient(400deg,rgb(25,86,98),rgba(25,86,98,0.9),rgb(25,86,98)),url(./Images/23_bacgroung_sec_2_and_all.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    
+    40%{
+        background: linear-gradient(400deg,rgb(25,86,98),rgba(25,86,98,0.8),rgb(25,86,98)),url(./Images/23_bacgroung_sec_2_and_all.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    60%{
+        background: linear-gradient(400deg,rgb(25,86,98),rgba(25,86,98,0.85),rgb(25,86,98)),url(./Images/23_bacgroung_sec_2_and_all.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    80%{
+        background: linear-gradient(400deg,rgb(25,86,98),rgba(25,86,98,0.95),rgb(25,86,98)),url(./Images/23_bacgroung_sec_2_and_all.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    90%{
+        background: linear-gradient(400deg,rgb(25,86,98),rgba(25,86,98,1),rgb(25,86,98)),url(./Images/23_bacgroung_sec_2_and_all.jpg);
+        background-repeat: no-repeat;
+    }
+}
+
+
+
+.section-4 .container{
+    width: 100%;
+    height: 90vh;
+    background:transparent;
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+}
+
+.section-4 .container .controversy-box{
+    font-size: 11px;
+    background-color: transparent;
+    box-shadow: 0 0 0 20px rgba(11,57,66,0.8);
+    padding: 5px;
+    transform: scale(.9);
+    transition: .3s ease-in-out;
+    background-color: rgba(6 ,75, 88 ,1);
+    border-radius: 5px;
+    z-index: 1111;
+}
+
+
+.section-4 .container .controversy-box:hover{
+    background-color: rgba(11,57,66,0.9);
+    box-shadow: 0 0 0 20px rgba(11,57,66,1);
+    transform: scale(1);
+}
+
+.section-4 .container .controversy-box h1{
+    cursor:zoom-in;
+}
+
+.section-4 .container .controversy-box a{
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.section-4 .container .controversy-box a::after{
+    content:'read more...';
+    color: rgba(28,133, 153,0.8);
+    transition: .3s ease-in-out;
+
+}
+
+.section-4 .container .controversy-box a:hover::after{
+    content:'read more at wikipedia.com';
+    color: rgba(0,255,255,0.6);
+
+}
+
+
+.section-4 .container .controversy-box h1::before{
+    content:open-quote;
+    font-size: 40px;
+}
+
+.section-4 .container .controversy-box h1::after{
+    content: close-quote;
+    font-size: 40px;
+}
+
+
+/* Section 4 End */
+
+
+/* Section 5 start */
+
+.banner-container .section-5{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(400deg,rgb(25,86,98),rgba(25,86,98,0.9),rgb(25,86,98)),url(./Images/24_bacgroung_sec_2_and_all.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.section-5 .container{
+    width: 100%;
+    height: 90vh;
+    background:transparent;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+    padding: 5px;
+}
+
+.section-5 .container .quotes-box{
+    color: var(--text-color);
+    flex: 25%;
+    height: 300px;
+    width: 300px;
+    background: transparent;
+    margin: 10px;
+    font-size:x-large;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 50px;
+    padding: 10px;
+    border-radius: 1px 100px 100px 1px;
+    background-color: rgba(6 ,75, 88 ,1);
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2), -5px -5px 10px rgba(0,0,0,0.1);
+    
+    transition: .3s ease-in-out;
+    z-index: 111;
+}
+
+.section-5 .container .quotes-box h5::before{
+    content:open-quote;
+    font-size: 40px;
+}
+
+.section-5 .container .quotes-box h5::after{
+    content: close-quote;
+    font-size: 40px;
+}
+
+.section-5 .container .quotes-box:hover{
+    box-shadow: 0 0 30px rgba(11,57,66,1);
+    background-color:rgba(16 ,60 ,68,1);
+    transform: scale(1);
+    z-index: 11;
+}
+
+.section-5 .backdesign{
+    transform:translateX(300px);
+    height: 3px;
+    width: 40%;
+    position: absolute;
+    animation: backshow-section-5 10s ease-in-out 2s infinite;
+    z-index: 1;
+}
+
+@keyframes backshow-section-5{
+    0%,100%{
+        border-bottom: 1px solid rgba(0,255,255,0.6);
+        box-shadow: 0 0 20px rgba(0,255,255,1) ;
+    }
+
+    50%{
+        transform: rotate(3600deg);
+        box-shadow: 0 0 20px rgba(0,255,255,1) ;
+    }
+}
+
+/* Section 5 End */
+
+
+footer{
+    height: 50px;
+    width: 100%;
+    background-color: rgba(0,0,0,0.2);
+}
+
+footer .section-footer{
+    text-align: center;
+    line-height: 50px;
+    font-size: 22px;
+    letter-spacing: 3px;
+    background-color: rgba(255,255,255,0.1);
+}
+
+footer .section-footer span{
+    font-weight: bolder;
+    font-style: initial;
+    transition: .3s ease-in-out;
+}
+
+footer .section-footer span:hover{
+    color: rgba(0,255,255,0.3);
+}
+
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+
+marquee h5{
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: rgba(0,255,255,0.3);
+}
+
+marquee h5 span{
+    color: rgba(0,255,255,0.4);
+    font-weight: bold;
+}
+
+marquee h5:hover span{
+    color: rgba(0,255,255,0.6);
+}
